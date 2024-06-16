@@ -17,7 +17,7 @@ jobs:
       - name: Build docker image
         run: docker build -t adlane95/websocket-client:latest .
       - name: Publish image to docker hub
-        run: docker push adlane95/websocket-client:latest
+        run: sudo docker push adlane95/websocket-client:latest
         
   deploy:
     needs: build
