@@ -15,7 +15,7 @@ jobs:
       - name: Login to docker hub
         run:  docker login -u adlane95 -p dckr_pat_ICLqRUbjZevWm4bWAmj7fpm7MzE
       - name: Build docker image
-        run: docker build -t adlane95/websocket-client:latest .
+        run:  docker build -t adlane95/websocket-client:latest .
       - name: Publish image to docker hub
         run: sudo docker push adlane95/websocket-client:latest
         
